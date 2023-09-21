@@ -13,7 +13,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = int(SCREEN_WIDTH * 0.8)
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption('Shooter')
+pygame.display.set_caption("Oscar's Adeventure")
 
 #set framerate
 clock = pygame.time.Clock()
@@ -44,14 +44,14 @@ grenade_thrown = False
 
 #load music and sounds
 pygame.mixer.music.load('audio/music2.mp3')
-pygame.mixer.music.set_volume(0.3)
+pygame.mixer.music.set_volume(0.1)
 pygame.mixer.music.play(-1, 0.0, 5000)
 jump_fx = pygame.mixer.Sound('audio/jump.wav')
 jump_fx.set_volume(0.05)
 shot_fx = pygame.mixer.Sound('audio/shot.wav')
-shot_fx.set_volume(0.05)
+shot_fx.set_volume(0.1)
 grenade_fx = pygame.mixer.Sound('audio/grenade.wav')
-grenade_fx.set_volume(0.05)
+grenade_fx.set_volume(0.15)
 
 
 #load images
